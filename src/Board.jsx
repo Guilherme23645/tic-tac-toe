@@ -3,10 +3,12 @@ import Square from './Square.jsx'
 
 const Board = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
+  const [flag, setFlag] = useState(true)
 
   const handleClick = (pos) => {
     const updatedSquares = squares.slice()
-    updatedSquares[pos] = "X"
+    updatedSquares[pos] = flag ? "X" : "O"
+    setFlag(!flag)
     setSquares(updatedSquares)
   }
 
