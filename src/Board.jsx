@@ -26,6 +26,7 @@ const Board = () => {
   const [flag, setFlag] = useState(true)
 
   const handleClick = (pos) => {
+    if (calculateWinner(squares) || squares[i]) return
     const updatedSquares = squares.slice()
     updatedSquares[pos] = flag ? "X" : "O"
     setFlag(!flag)
