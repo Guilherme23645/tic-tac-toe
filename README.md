@@ -1,16 +1,15 @@
-# React + Vite
+# tic-tac-toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+React.dev's Tic-Tac-Toe basically. The difference here is how each component is a single JSX file and that the logic is slightly different in some cases.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Screenshots
 
-## React Compiler
+### Code
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/42b9b618-71fe-4335-8ce8-414fce82ad47" />
 
-## Expanding the ESLint configuration
+### Game
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="330" height="248" alt="image" src="https://github.com/user-attachments/assets/85c3394d-19a3-4d9e-9f29-43e7f6445a71" />
