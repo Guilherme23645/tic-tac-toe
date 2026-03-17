@@ -21,16 +21,12 @@ const calculateWinner = (squares) => {
   return null;
 }
 
-const Board = () => {
-  const [squares, setSquares] = useState(Array(9).fill(null))
-  const [flag, setFlag] = useState(true)
-
+const Board = ({flag, squares, onPlay}) => {
   const handleClick = (pos) => {
     if (calculateWinner(squares) || squares[pos]) return
     const updatedSquares = squares.slice()
     updatedSquares[pos] = flag ? "X" : "O"
-    setFlag(!flag)
-    setSquares(updatedSquares)
+    onPlay(updatedSquares)
   }
 
   const winner = calculateWinner(squares)

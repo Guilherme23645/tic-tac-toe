@@ -6,8 +6,9 @@ const Game = () => {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const currentSquares = history[history.length - 1];
 
-  const handlePlay = () => {
-    // TODO
+  const handlePlay = (updatedSquares) => {
+    setHistory([...history, updatedSquares])
+    setFlag(!flag)
   }
 
   return (
